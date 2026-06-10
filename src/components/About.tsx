@@ -36,36 +36,83 @@ export default function About() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Overview Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400 mb-6">
-            Overview
-          </h1>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            As a Computer Science student at Dayananda Sagar, I am passionate about developing innovative software solutions and user-friendly interfaces. I have proficiency in JavaScript, React.js, Node.js, Express.js, MongoDB, EJS, RESTful APIs, C++, Data Structures, HTML, and CSS. I’m a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let’s work together to bring your ideas to life!
+  {/* Overview Section */}
+  <div className="text-center mb-16">
+    <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400 mb-6">
+      What I Do
+    </h1>
+
+    <p className="text-lg text-gray-300 max-w-4xl mx-auto">
+      I am a Computer Science graduate and aspiring DevOps Engineer with
+      experience in cloud infrastructure, CI/CD automation, containerization,
+      and full-stack application development. I have hands-on experience with
+      AWS, Docker, Kubernetes, Jenkins, Terraform, Ansible, Linux, and GitHub
+      Actions, along with building scalable MERN stack applications. My focus
+      is on automating deployments, managing cloud-native applications, and
+      creating reliable, secure, and highly available systems through modern
+      DevOps practices and cloud technologies.
+    </p>
+  </div>
+
+  {/* Roles Section */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+    {[
+      { role: "DevOps Engineer", icon: <FullStackIcon /> },
+      { role: "Cloud Engineer", icon: <MERNIcon /> },
+      { role: "Full Stack Developer", icon: <FrontendIcon /> },
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center"
+      >
+        <div className="mb-4">{item.icon}</div>
+        <h3 className="text-xl font-semibold text-blue-400">
+          {item.role}
+        </h3>
+      </div>
+    ))}
+  </div>
+
+  {/* Services Section */}
+  <div>
+    <h2 className="text-4xl font-bold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
+      Services I Provide
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-6">
+      {[
+        {
+          title: "Cloud Solutions",
+          description:
+            "Designing, deploying, and managing scalable, secure, and highly available cloud infrastructure on AWS.",
+        },
+        {
+          title: "DevOps & Automation",
+          description:
+            "Building CI/CD pipelines, automating deployments, and implementing Infrastructure as Code using industry-standard DevOps tools.",
+        },
+        {
+          title: "Web Development",
+          description:
+            "Developing modern, responsive, and scalable full-stack web applications with seamless user experiences.",
+        },
+      ].map((service, index) => (
+        <div
+          key={index}
+          className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-emerald-400 transition-all duration-300 hover:scale-105"
+        >
+          <h3 className="text-xl font-semibold text-blue-400 mb-3">
+            {service.title}
+          </h3>
+
+          <p className="text-gray-300">
+            {service.description}
           </p>
         </div>
-
-        {/* Roles Section with Icons */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { role: "Full Stack Developer", icon: <FullStackIcon /> },
-            { role: "MERN Developer", icon: <MERNIcon /> },
-            { role: "Frontend Developer", icon: <FrontendIcon /> },
-            { role: "Backend Developer", icon: <BackendIcon /> },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="p-6 bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 hover:scale-105 flex flex-col items-center text-center"
-            >
-              <div className="mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-blue-400">{item.role}</h3>
-            </div>
-          ))}
-        </div>
-
-       
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
 
       {/* Custom Animations */}
       <style>

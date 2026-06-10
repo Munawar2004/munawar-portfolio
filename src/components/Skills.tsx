@@ -3,19 +3,57 @@ import React from "react";
 const skills = [
   {
     category: "Frontend Development",
-    technologies: ["React.js", "Redux", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
+    technologies: [
+      "React.js",
+      "Redux",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+    ],
   },
   {
     category: "Backend Development",
-    technologies: ["Node.js", "Express.js", "RESTful APIs"],
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "RESTful APIs",
+      "JWT",
+      "Socket io",
+    ],
   },
   {
     category: "Database",
-    technologies: ["MongoDB", "Database Design"],
+    technologies: [
+      "MongoDB",
+      "Database Design",
+      "MySQL",
+    ],
+  },
+  {
+    category: "DevOps & Cloud",
+    technologies: [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "Terraform",
+      "Ansible",
+      "CI/CD Pipelines",
+    ],
   },
   {
     category: "Tools & Others",
-    technologies: ["Git", "Postman", "Canva"],
+    technologies: [
+      "Git",
+      "Linux",
+      "GitHub",
+      "Postman",
+      "VS Code",
+      "Canva",
+    ],
   },
 ];
 
@@ -40,7 +78,7 @@ export default function Skills() {
         </h2>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}

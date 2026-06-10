@@ -43,10 +43,10 @@ export default function Hero() {
             Munawar Bhat
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-            Full Stack Developer | MERN Stack
+            Devops Engineer | Full Stack Developer(MERN Stack)
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-6">
-            Passionate about building scalable web applications using the MERN Stack.
+            Passionate about building scalable web applications.
           </p>
           {/* Social Icons */}
           <div className="flex justify-center md:justify-start gap-6">

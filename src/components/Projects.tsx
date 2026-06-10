@@ -2,15 +2,75 @@ import React from "react";
 
 const projects = [
   {
-    title: "Foodcart",
-    description: "FoodCart is a full-stack food delivery platform built with the MERN stack. It allows users to browse restaurants, order food, and manage their accounts. Features include JWT authentication, real-time order tracking, and a user-friendly interface.",
-    tech: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
+    title: "FoodCart",
+    description:
+      "Full-stack food delivery platform built using the MERN stack. Features restaurant onboarding, menu management, JWT authentication, shopping cart, order tracking, admin approval workflows, and responsive user experience.",
+    tech: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"],
   },
+
   {
     title: "Portfolio Website",
-    description: "My portfolio website is a dynamic and responsive platform designed to showcase my skills, projects, and professional journey. Built with the MERN stack, it features a clean and modern design, seamless navigation, and interactive elements to engage visitors.",
-    tech: ["React.js", "Svg", "HTML", "Tailwind Css"],
+    description:
+      "Modern responsive portfolio website designed to showcase projects, technical skills, certifications, and professional experience. Features interactive UI, animations, and optimized performance.",
+    tech: ["React.js", "Tailwind CSS", "HTML5", "SVG", "JavaScript"],
   },
+
+  {
+    title: "AWS Scalable Web Deployment",
+    description:
+      "Designed and deployed a highly available multi-tier web application on AWS using EC2, Application Load Balancer, Auto Scaling Groups, Route 53, and S3. Implemented secure networking, Linux server administration, Tomcat deployment, MySQL database integration, RabbitMQ messaging, and Memcached caching.",
+    tech: [
+      "AWS",
+      "EC2",
+      "ALB",
+      "Auto Scaling",
+      "Route 53",
+      "S3",
+      "Linux",
+    ],
+  },
+
+  {
+    title: "CI/CD Pipeline with Jenkins & Docker",
+    description:
+      "Built an automated CI/CD pipeline that integrates GitHub, Jenkins, Docker, and Kubernetes. Automated code build, testing, Docker image creation, container registry push, and application deployment to Kubernetes clusters, reducing manual deployment efforts.",
+    tech: [
+      "Jenkins",
+      "Docker",
+      "Kubernetes",
+      "GitHub",
+      "CI/CD",
+      "Helm",
+      "Linux",
+    ],
+  },
+
+  {
+    title: "Infrastructure Automation with Terraform & Ansible",
+    description:
+      "Automated cloud infrastructure provisioning and server configuration using Terraform and Ansible. Created reusable Infrastructure as Code templates for AWS resources and automated application deployment and configuration management.",
+    tech: [
+      "Terraform",
+      "Ansible",
+      "AWS",
+      "EC2",
+      "Linux",
+      "Infrastructure as Code",
+    ],
+  },
+  {
+  title: "QuickChat",
+  description:
+    "Real-time chat application built with the MERN stack, enabling secure one-to-one messaging with instant message delivery using WebSocket communication. Features include user authentication, profile management, online/offline presence tracking, media sharing, chat history, and responsive dark-mode UI. Designed with a scalable backend architecture for handling real-time socket connections and message persistence.",
+  tech: [
+    "MongoDB",
+    "Express.js",
+    "React.js",
+    "Node.js",
+    "Socket.io",
+    "WebSockets",
+  ],
+},
 ];
 
 export default function Projects() {
@@ -34,7 +94,7 @@ export default function Projects() {
         </h2>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}

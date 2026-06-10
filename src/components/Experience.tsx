@@ -36,13 +36,15 @@ const experienceData = [
   {
     company: "LeLafe IT Solutions Private Limited",
     role: "Software Development Intern",
-    duration: "Dec 2024 - Present",
+    duration: "Dec 2024 – Jun 2025",
     tasks: [
-      "Developing full-stack applications using the MERN stack.",
-      "Implementing authentication and database integration.",
-      "Optimizing API performance and enhancing UI/UX.",
+      "Developed a full-stack food delivery platform using MongoDB, Express.js, React.js, and Node.js in an agile team of 3 developers.",
+      "Built 40+ RESTful APIs covering user authentication, restaurant registration, menu management, cart operations, and order processing.",
+      "Implemented JWT-based authentication and role-based access control for customers, restaurant owners, and administrators.",
+      "Designed and integrated MongoDB schemas, improving data organization and application performance.",
+      "Collaborated with team members to enhance UI/UX and optimize backend API response times.",
     ],
-    link: "https://lelafe.com", // Company website link
+    link: "https://lelafe.com",
   },
 ];
 
